@@ -1,1 +1,11 @@
+build:
+  docker:
+    web: Dockerfile
 
+run:
+  web: npm start
+
+release:
+  command: "npm run migrate || true"
+
+# Notes: This heroku.yml tells Heroku to build the app using the Dockerfile in the repo, run the web process with `npm start`, and run an optional release command if defined in package.json. Adjust the commands if your app uses a different start command or language.
