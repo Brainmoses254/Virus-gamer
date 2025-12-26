@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "serve -s public -l 3000",
     "dev": "nodemon index.js",
     "build": "echo \"No build step specified\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
     "test": "echo \"No tests specified\" && exit 0",
     "lint": "eslint . --ext .js,.mjs,.cjs"
   },
@@ -26,13 +28,15 @@
   "bugs": {
     "url": "https://github.com/Brainmoses254/Virus-gamer/issues"
   },
-  "homepage": "https://github.com/Brainmoses254/Virus-gamer#readme",
+  "homepage": "https://brainmoses254.github.io/Virus-gamer/",
   "engines": {
     "node": ">=18"
   },
   "dependencies": {},
   "devDependencies": {
     "nodemon": "^2.0.22",
-    "eslint": "^8.46.0"
+    "eslint": "^8.46.0",
+    "gh-pages": "^5.0.0",
+    "serve": "^14.2.0"
   }
 }
