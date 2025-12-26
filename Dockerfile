@@ -1,4 +1,4 @@
-# Multi-stage Dockerfile for a Node.js app (works for server apps or apps that build assets)
+#Multi-stage Dockerfile for a Node.js app (works for server apps or apps that build assets)
 # Adjust NODE_VERSION, ports, and build/start scripts as needed.
 
 # Stage 1 — install production deps separately (cache-friendly)
