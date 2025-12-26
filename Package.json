@@ -1,1 +1,38 @@
-
+{
+  "name": "virus-gamer",
+  "version": "0.1.0",
+  "description": "Virus-gamer — a small JavaScript game project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "echo \"No build step specified\"",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "eslint . --ext .js,.mjs,.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brainmoses254/Virus-gamer.git"
+  },
+  "keywords": [
+    "game",
+    "virus",
+    "javascript",
+    "node"
+  ],
+  "author": "Brainmoses254",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brainmoses254/Virus-gamer/issues"
+  },
+  "homepage": "https://github.com/Brainmoses254/Virus-gamer#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "eslint": "^8.46.0"
+  }
+}
